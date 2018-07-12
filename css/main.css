@@ -1,0 +1,272 @@
+html {
+	font-size: 16px;
+}
+
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.5em;
+
+}
+
+/* Mobile (default) style */
+header {
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	font-size: 1em;
+}
+
+header h1 {
+	margin: 0;
+	padding: 30px 30px;
+	font-size: 1.5em;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 0;
+	clear: both;
+	background-color: #77a466;
+}
+header nav ul {
+	margin: 0;
+	padding: 30px;
+	display: inline;
+	list-style-type: none;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 6px 30px;
+}
+header nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+/*The widths are in a percentage!*/
+
+
+
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+	font-size: 1em;
+}
+
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+	width: 100%;
+	border-top: 1px solid white;
+}
+
+.top-section .main-title {
+	height: auto;
+	float: left;
+	padding: 0 30px;
+}
+.top-section .main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+	font-size: 1.1em;
+}
+}
+.top-section .main-title p {
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
+}
+
+
+.bottom-section .section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.bottom-section .section-one h4,
+.bottom-section .section-two h4,
+.bottom-section .section-three h4 {
+	padding: 10px 30px;
+	font-size: 0.9em;
+}
+
+.bottom-section .section-one .menu {
+	list-style: none;
+	padding: 0 30px;
+}
+.bottom-section .section-one .menu li {
+	color:#77a466;
+	font-size: 1.3em;
+	padding: 10px 0px;
+}
+
+.bottom-section .section-two .reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 0 30px;
+	margin-bottom: 32px;
+}
+
+.bottom-section .section-three .address {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	font-size: 1em;
+}
+
+footer h4 {
+	font-size:0.7em;
+}
+
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.4em;
+}
+
+/* Tablet styles here */
+@media all and (min-width:768px) {
+ 	.section-one{
+		width: 100%;
+	}
+	.section-two, 
+	.section-three {
+		width:49%;
+	}
+	header {
+		border-bottom: none;
+		margin: 0 auto;
+		clear:both;
+		padding: auto;
+		text-align: center;
+	}
+
+	header h1 {
+		margin: 0;
+		padding: 38px 30px;
+		font-size: 2em;
+		text-align: center;
+	}
+	header h1 span {
+		color: #77a466;
+	}
+
+	header nav {
+		padding: 30px;
+		font-size: 1em;
+		text-align: center;
+	}
+	header nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1em;
+		padding: 0 10px;
+		display: inline;
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:white;
+	}
+
+} 
+
+/* Desktop styles here */
+@media all and (min-width:940px) {
+
+ 	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+	}
+	header {
+		margin: 0 auto;
+		padding: auto;
+		overflow: auto;
+	}
+
+	header h1 {
+		margin: 0;
+		padding: 38px 30px;
+		font-size: 2em;
+		text-align: left;
+		float: left;		
+		clear: both;
+	}
+	header h1 span {
+		color: #77a466;
+	}
+
+	header nav {
+		float: right;
+		padding: 46px 0 46px 0;
+		font-size: 1em;
+		background-color: white;
+		clear: both;
+
+	}
+	header nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1em;
+		padding: 0 10px;
+
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+}
+
+}
